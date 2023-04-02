@@ -15,13 +15,17 @@ const Nav = () => {
     
     return (
         <nav>
-            <h3 style={{ marginLeft: '80px', fontSize: '30px'}}>The Home Shop</h3>
+            <Link to='/'>
+                <div className={active === 0 ? 'active' : ''} onClick={() => handleActive(0)}>
+                    <h3 style={{ fontSize: '30px'}}>Home</h3>
+                </div>
+            </Link>
             <ul>
-                <Link to='/'>
+                {/* <Link to='/'>
                     <li className={active === 1 ? 'active' : ''} onClick={() => handleActive(1)}>
                         Home
                     </li>
-                </Link>
+                </Link> */}
                 <Link to='/shop'>
                     <li className={active === 2 ? 'active' : ''} onClick={() => handleActive(2)}>
                         Shop

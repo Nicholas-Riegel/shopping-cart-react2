@@ -1,12 +1,18 @@
-*{
+/* ALL */
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* BODY */
+
 body{
     padding-top: 60px;
 }
+
+/* NAV */
 
 nav{
     display: flex;
@@ -27,7 +33,7 @@ nav ul{
     /* height: 100%; */
 }
 
-nav li{
+nav li, nav div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +45,11 @@ nav li{
     height: 60px;
 }
 
-nav li.active {
+nav li:hover, nav div:hover{
+    background-color: rgb(117, 92, 174);
+}
+/* nav li.active { */
+nav li.active, nav div.active {
     background-color: rgb(89, 67, 141);
 }
 
@@ -47,21 +57,7 @@ nav a{
     text-decoration: none;
 }
 
-.title_div img{
-    height: 200px;
-    margin-top: 30px;
-}
-
-img{
-    height: 100px;
-    margin: 10px 0;
-}
-
-.buttons_div button{
-    height: 30px;
-    width: 30px;
-    font-size: 18px;
-}
+/* HOME */
 
 .home_div{
     display: flex;
@@ -76,25 +72,22 @@ img{
     font-size: 60px;
 }
 
-.item_div{
-    /* background-color: ; */
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10%;
-    border-radius: 15px;
-    border: gray solid 1px;
-    background-color: white;
+/* SHOP */
+
+.shop_div{
+    background-color: rgb(176, 176, 240);
+    padding: 20px;
+    /* margin-top: 60px; */
 }
 
-.item_cart_div{
-    /* background-color: ; */
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10%;
-    border-radius: 15px;
-    border: gray solid 1px;
-    background-color: white;
-    width: 55%;
+.title_div img{
+    height: 200px;
+    margin-top: 10px;
+}
+
+img{
+    height: 100px;
+    margin-bottom: 10px 0;
 }
 
 .buttons_div{
@@ -103,10 +96,26 @@ img{
     width: 45%;
     justify-content: space-around;
     align-items: center;
+    max-height: 4rem;
+}
+
+.buttons_div button{
+    height: 2.8rem;
+    width: 2.8rem;
+    font-size: 18px;
+    /* border: solid black 1px; */
+}
+
+.item_div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10%;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .price_add{
-    /* border: red solid 1px; */
+    /* border: green solid 1px; */
     width: 40%;
     display: flex;
     justify-content: space-around;
@@ -114,9 +123,12 @@ img{
 }
 
 .wrap_price_divs{
-    /* border: green solid 1px; */
+    /* border: blue solid 1px; */
     display: flex;
-    width: 50%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .title_div{
@@ -128,22 +140,19 @@ img{
     padding: 20px;
 }
 
-.cart_div h1{
-    text-align: center;
-    margin-top: 20px;
-}
 
-.shop_div{
-    background-color: rgb(176, 176, 240);
-    padding: 20px;
-    /* margin-top: 60px; */
-}
+/* CART */
 
 .cart_div{
     background-color: rgb(176, 176, 240);
     padding: 20px;
     min-height: 100vh;
     /* margin-top: 60px; */
+}
+
+.cart_div h1{
+    text-align: center;
+    margin-top: 20px;
 }
 
 .checkout_div{
@@ -158,7 +167,7 @@ img{
     border: gray solid 1px;
     border-radius: 15px;
     width: 20%;
-    height: 400px;
+    height: 150px;
 }
 
 .checkout_div button{
@@ -166,4 +175,27 @@ img{
     width: 40%;
     height: 40px;
     font-size: large;
+}
+
+.item_cart_div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10%;
+    border-radius: 15px;
+    background-color: white;
+    width: 55%;
+}
+
+.item_cart_div .buttons_div{
+    justify-content: space-between;
+}
+
+.item_cart_div button{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.item_cart_div input{
+    height: 1.5rem;
+    width: 2.5rem;
 }

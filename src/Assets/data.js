@@ -20,7 +20,7 @@ const itemsArray = [
     {
         id: 4,
         title: 'Car',
-        price: '10,456.25',
+        price: 10456.25,
         image: 'car.jpg',
     },
     {

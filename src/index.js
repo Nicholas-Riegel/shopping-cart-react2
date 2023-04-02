@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './Components/App.css'
+import './index.css'
 import App from './Components/App'
 
 ReactDOM.render(
