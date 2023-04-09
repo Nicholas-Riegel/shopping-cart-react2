@@ -1,8 +1,6 @@
-# Shopping Cart Project
+# React Shopping Cart
 
-This is a shopping-cart project.
-
-The project exemplifies the following technologies:
+This project exemplifies the following technologies:
 * React Router
 * Context api
 * Setting Context with more than one state
