@@ -1,5 +1,4 @@
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-// import { useContext, useEffect } from 'react'
 
 import { ContextFunction, Context } from './Context'
 import Nav from './Nav'
@@ -7,11 +6,6 @@ import Shop from './Shop'
 import Cart from './Cart'
 
 const Home = () => {
-    
-    // const {tabs} = useContext(Context)
-    // const [active, setActive] = tabs
-
-    // useEffect(() => setActive(1), [])
     
     return (
         <div className='home_div'>
@@ -22,7 +16,7 @@ const Home = () => {
 
 const App = () => (
     <ContextFunction>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename='/'>
             <Nav />
             <Switch>
                 <Route exact path='/' component={Home} />
@@ -35,11 +29,3 @@ const App = () => (
 )
 
 export default App
-
-// export default function App() {
-//   return (
-//     <h1 className="text-3xl font-bold underline">
-//       Hello world!
-//     </h1>
-//   )
-// }

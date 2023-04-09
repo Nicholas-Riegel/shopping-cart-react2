@@ -21,11 +21,6 @@ const Nav = () => {
                 </div>
             </Link>
             <ul>
-                {/* <Link to='/'>
-                    <li className={active === 1 ? 'active' : ''} onClick={() => handleActive(1)}>
-                        Home
-                    </li>
-                </Link> */}
                 <Link to='/shop'>
                     <li className={active === 2 ? 'active' : ''} onClick={() => handleActive(2)}>
                         Shop
