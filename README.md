@@ -1,6 +1,6 @@
 # Shopping Cart Project
 
-URL: https://nicholas-riegel.github.io/shopping_cart_react2/#/
+URL: https://nicholas-riegel.github.io/shopping-cart-react2
 
 Checkout button in Cart intentionally not working. 
 
