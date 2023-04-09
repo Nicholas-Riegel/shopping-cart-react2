@@ -14,7 +14,7 @@ const Shop = () => {
   return (
     <div className="shop_div text-indigo-500">
       {items.map((x, i) => (
-        <div key={i} className="item_div bg-indigo-100">
+        <div key={i} className="item_div">
           <div className="title_div">
             <h1 className='text-lg font-bold'>{x.title}</h1>
             <img

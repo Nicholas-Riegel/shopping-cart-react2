@@ -1,15 +1,14 @@
 /* ALL */
+:root{
+    --item-background-color: rgba(255, 255, 255, 0.63);
+    --big-box-shadow: 5px 5px 5px rgba(121, 120, 200, 0.3);
+    --small-box-shadow: 3px 3px 3px rgba(121, 120, 200, 0.2);
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-/* BODY */
-
-body{
-    padding-top: 60px;
 }
 
 /* NAV */
@@ -21,7 +20,7 @@ nav{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(133, 133, 216);
+    background-color: rgba(133, 133, 216, .5);
     color: whitesmoke;
     min-height: 60px;
 }
@@ -30,7 +29,6 @@ nav ul{
     list-style: none;
     display: flex;
     align-items: center;
-    /* height: 100%; */
 }
 
 nav li, nav div{
@@ -41,16 +39,15 @@ nav li, nav div{
     text-decoration: none;
     color: whitesmoke;
     font-size: 25px;
-    /* border: red solid 1px; */
     height: 60px;
 }
 
 nav li:hover, nav div:hover{
-    background-color: rgb(117, 92, 174);
+    background-color: rgba(117, 92, 174, .5);
 }
-/* nav li.active { */
+
 nav li.active, nav div.active {
-    background-color: rgb(89, 67, 141);
+    background-color: rgba(89, 67, 141, .5);
 }
 
 nav a{
@@ -63,11 +60,9 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 60px; */
-    height: 93vh;
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fproperty-hubz.com%2Fuae%2Fwp-content%2Fuploads%2F2018%2F05%2Fmodern-interiors-4k-hd-wallpapers-sea-view-simple-living-room-decorate-design-idea_how-to-design-living-room_dining-room-ideas-contemporary-pics-indoor-design-area-large-sets-home-inte.jpg&f=1&nofb=1');
+    height: 100vh;
+    background-image: url('../../public/pictures/background.jpg');
     background-size: cover;
-    /* color: rgba(152, 154, 231, 0.863); */
     color:  rgb(89, 67, 141);
     font-size: 60px;
 }
@@ -75,9 +70,10 @@ nav a{
 /* SHOP */
 
 .shop_div{
-    background-color: rgb(176, 176, 240);
+    background-image: url('../../public/pictures/background.jpg');
+    background-attachment: fixed;
     padding: 20px;
-    /* margin-top: 60px; */
+    padding-top: 7rem;
 }
 
 .title_div img{
@@ -92,7 +88,6 @@ img{
 
 .buttons_div{
     display: flex;
-    /* border: red solid 1px; */
     width: 45%;
     justify-content: space-around;
     align-items: center;
@@ -103,7 +98,6 @@ img{
     height: 2.8rem;
     width: 2.8rem;
     font-size: 18px;
-    /* border: solid black 1px; */
 }
 
 .item_div{
@@ -111,11 +105,11 @@ img{
     justify-content: space-between;
     margin: 10px 10%;
     border-radius: 15px;
-    background-color: white;
+    background-color: var(--item-background-color);
+    box-shadow: var(--big-box-shadow);
 }
 
 .price_add{
-    /* border: green solid 1px; */
     width: 40%;
     display: flex;
     justify-content: space-around;
@@ -123,7 +117,6 @@ img{
 }
 
 .wrap_price_divs{
-    /* border: blue solid 1px; */
     display: flex;
     width: 70%;
     justify-content: center;
@@ -134,7 +127,6 @@ img{
 .title_div{
     display: flex;
     flex-direction: column;
-    /* border: red solid 1px; */
     align-items: center;
     width: 40%;
     padding: 20px;
@@ -144,10 +136,11 @@ img{
 /* CART */
 
 .cart_div{
-    background-color: rgb(176, 176, 240);
+    background-image: url('../../public/pictures/background.jpg');
+    background-attachment: fixed;
     padding: 20px;
+    padding-top: 5.3rem;
     min-height: 100vh;
-    /* margin-top: 60px; */
 }
 
 .cart_div h1{
@@ -161,13 +154,14 @@ img{
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-    top: 90px;
+    top: 5.9rem;
     left: 68%;
-    background-color: white;
-    border: gray solid 1px;
+    background-color: var(--item-background-color);
+    border: none;
     border-radius: 15px;
     width: 20%;
     height: 150px;
+    box-shadow: var(--small-box-shadow);
 }
 
 .checkout_div button{
@@ -182,8 +176,9 @@ img{
     justify-content: space-between;
     margin: 10px 10%;
     border-radius: 15px;
-    background-color: white;
+    background-color: var(--item-background-color);
     width: 55%;
+    box-shadow: var(--small-box-shadow);
 }
 
 .item_cart_div .buttons_div{
